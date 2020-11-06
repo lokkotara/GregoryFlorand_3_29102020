@@ -1,0 +1,27 @@
+{
+  "name": "gregoryflorand_3_29102020",
+  "version": "1.0.0",
+  "description": "GregoryFlorand_3_29102020",
+  "main": "index.js",
+  "scripts": {
+    "scss2css": "node ./node_modules/gulp/bin/gulp.js scss2css",
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokkotara/GregoryFlorand_3_29102020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokkotara/GregoryFlorand_3_29102020/issues"
+  },
+  "homepage": "https://github.com/lokkotara/GregoryFlorand_3_29102020#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
