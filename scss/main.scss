@@ -8,7 +8,7 @@ $Tertiary-Color: #99E2D0;
   background-color: white;
   font-size: 10px;
 }
-html,body,p,ul,li,figure,h1,h2,h3,h4,h5,h6{
+html,body,p,ul,ol,li,figure,h1,h2,h3,h4,h5,h6{
   margin:0;
   padding:0
 }
@@ -34,7 +34,7 @@ img{
   max-width:100%
 }
 p, li {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 h2 {
   font-size: 2rem;
@@ -89,17 +89,19 @@ h3 {
 // heading
 .Heading {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 285px;
+  flex-flow: column wrap;
+  justify-content: space-around;
   background-color: #f6f6f6;
-  padding-bottom: 4.7rem;
-  padding-top: 4.6rem;
   text-align: center;
-  row-gap: 2rem;
   h1 {
     font-weight: bold;
-    flex: 0.7;
     font-size: 2.4rem;
+    margin: 2.5rem auto 0;
+    width: 70%;
+  }
+  p {
+    font-weight: 300;
   }
   button {
     border-radius: 2.3rem;
@@ -108,16 +110,22 @@ h3 {
     padding: 1.5rem;
     color: white;
     font-size: 1.6rem;
+    width: 214px;
+    align-self: center;
+    margin-bottom: 3rem;
   }
 }
 // operation
   .Operation {
-    padding-top: 7rem;
+    padding:2rem;
+    display: flex;
+    flex-flow: column wrap;
     li {
       background-color: #f6f6f6;
       border-radius: 2.3rem;
-      padding: 3rem;
-      margin: 1rem;
+      padding: 2rem;
+      margin: 1.6rem;
+      flex: 1;
     }
   }
 // Restaurants
