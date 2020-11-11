@@ -1,45 +1,49 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+$Primary-Color: #9356DC;
+$Secondary-Color: #FF79DA;
+$Tertiary-Color: #99E2D0;
 :root {
-  --Primary-Color: #9356DC;
-  --Secondary-Color: #FF79DA;
-  --Tertiary-Color: #99E2D0;
   font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Shrikhand', cursive;
 }
-.Container {
+.ContentWrapper {
   display: flex;
   flex-direction: column;
 }
-.MainHeader {
+.TopHeader {
+  display: flex;
   flex: 1;
   align-self: center;
+  padding: 1rem 0;
 }
-.LocationWrapper {
+.Location {
   display: flex;
-  width: 100%;
   justify-content: center;
-  align-items: center;
-  i {
-  background-color: grey;
-  position: absolute;
-  left: 120px;
+  &Wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #eaeaea;
+    &--Bar {
+      background-color: inherit;
+      border: none;
+      padding-left: 1rem;
+    }
+    i {
+      background-color: inherit;
+      text-align: end;
+    }
   }
 }
-.LocationBar {
-  flex: 1;
-  position: relative;
-  border: none;
-  background-color: grey;
-  margin: auto;
-  text-align: center;
-}
-
 .Heading {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: green;
+  background-color: #f6f6f6;
 }
