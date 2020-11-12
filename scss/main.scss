@@ -3,6 +3,7 @@
 $Primary-Color: #9356DC;
 $Secondary-Color: #FF79DA;
 $Tertiary-Color: #99E2D0;
+$Gradient-Color: linear-gradient(to bottom right, #ff79da, #9356dc);
 :root {
   font-family: 'Roboto', sans-serif;
   background-color: white;
@@ -102,6 +103,7 @@ h3 {
   justify-content: space-around;
   background-color: #f6f6f6;
   text-align: center;
+  cursor: default;
   h1 {
     font-weight: bold;
     font-size: 2.4rem;
@@ -114,7 +116,7 @@ h3 {
   button {
     border-radius: 2.3rem;
     border: none;
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    background: $Gradient-Color;
     padding: 1.5rem;
     color: white;
     font-size: 1.6rem;
@@ -122,6 +124,11 @@ h3 {
     align-self: center;
     margin-bottom: 3rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.24);
+    transition: ease-in-out 0.3s;
+    &:hover {
+    box-shadow: 0 0.6rem 1rem rgba(0,0,0,0.60);
+    opacity: 0.85;
+    }
   }
 }
 // operation
@@ -145,7 +152,7 @@ h3 {
       padding-left: 0;
       margin-bottom: 3rem;
       box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.24);
-
+      transition: ease-in-out 0.2s;
       i {
         color: #7e7e7e;
         font-weight: 600;
@@ -165,6 +172,13 @@ h3 {
         border-radius: 50%;
         justify-content: center;
         align-items: center;
+      }
+      &:hover {
+        background-color: lighten($Primary-Color, 35%);
+        cursor: default;
+        i {
+          color: $Primary-Color;
+        }
       }
     }
   }
@@ -188,7 +202,9 @@ h3 {
     width: 100%;
     display: flex;
     align-items: center;
-    
+    a {
+      width: 100%;
+    }
   }
   figure {
     display: flex;
@@ -211,9 +227,12 @@ h3 {
   }
   .Like {
     font-size: 2rem;
+    transition: color ease-out 0.5s, font-weight ease 0.4s;
     &:hover {
+      background: linear-gradient(to top, #ff79da, #9356dc);
+      background-clip: text;
+      color: transparent;
       font-weight: 900;
-      color: #ff79da;
     }
   }
   aside {
