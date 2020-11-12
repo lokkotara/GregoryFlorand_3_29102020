@@ -58,6 +58,10 @@ h3 {
   flex: 1;
   align-self: center;
   padding: 2rem 0;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0px 0.6rem 1rem -1rem rgba(0, 0, 0, 0.6);
+  z-index: 2;
   img {
     width: 162px;
   }
@@ -117,27 +121,31 @@ h3 {
     width: 214px;
     align-self: center;
     margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.24);
   }
 }
 // operation
   .Operation {
-    padding: 48px 2rem 68px;
-    padding-bottom: 68px;
+    padding: 6rem 2rem;
     display: flex;
     flex-flow: column wrap;
+    row-gap: 2rem;
     ol {
       counter-reset: list;
+      padding-top: 1rem;
     }
     li {
       background-color: #f6f6f6;
       display: flex;
       align-items: center;
-      column-gap: 1rem;
+      column-gap: 1.5rem;
       counter-increment: list;
       border-radius: 2.3rem;
       padding: 2rem;
       padding-left: 0;
-      margin: 1.6rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.24);
+
       i {
         color: #7e7e7e;
         font-weight: 600;
@@ -163,7 +171,7 @@ h3 {
 // Restaurants
 .Restaurant {
   display: flex;
-  padding: 2rem;
+  padding: 5rem 2rem;
   flex-wrap: wrap;
   row-gap: 1rem;
   column-gap: 2rem;
@@ -176,10 +184,11 @@ h3 {
     width: 100%;
   }
   article {
+    margin-top: 1rem;
     width: 100%;
     display: flex;
-    // height: 251px;
     align-items: center;
+    
   }
   figure {
     display: flex;
@@ -194,6 +203,7 @@ h3 {
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.2);
   }
   .FigWrapper {
     display: flex;
@@ -201,6 +211,10 @@ h3 {
   }
   .Like {
     font-size: 2rem;
+    &:hover {
+      font-weight: 900;
+      color: #ff79da;
+    }
   }
   aside {
     position: absolute;
@@ -209,8 +223,12 @@ h3 {
     background-color: #99e2d0;
     color: #008766;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     margin-top: 1rem;
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
   }
 }
 // footer
@@ -220,5 +238,21 @@ footer {
   color: white;
   .FooterTitle {
     font-family: 'Shrikhand', cursive;
+    padding-bottom: 2rem;
+  }
+  li {
+    line-height: 1.5;
+  }
+  .Ustensils::before {
+    content: "\f2e7";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 1rem;
+    font-weight: 900;
+  }
+  .Helping::before {
+    content: "\f4c4";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 1rem;
   }
 }
