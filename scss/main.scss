@@ -1,4 +1,3 @@
-// @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 $Primary-Color: #9356DC;
 $Secondary-Color: #FF79DA;
@@ -13,11 +12,6 @@ html,body,p,ul,ol,li,figure,h1,h2,h3,h4,h5,h6{
   margin:0;
   padding:0
 }
-// h1,h2,h3,h4,h5,h6{
-//   font-size:100%;
-//   font-weight:normal
-//   font-family: 'Shrikhand', cursive;
-// }
 a {
   text-decoration: none;
   color: inherit;
@@ -301,11 +295,12 @@ footer {
 .MenuWrapper {
   display: flex;
   flex-direction: column;
+  row-gap: 2rem;
   background: #F6F6F6;
   border-radius: 4rem;
   position: relative;
   margin-top: -4rem;
-  padding: 2rem;
+  padding: 3.5rem 2rem 2rem;
   header {
     display: flex;
     justify-content: space-between;
@@ -315,6 +310,7 @@ footer {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.6rem;
+    padding-bottom: 2rem;
     &:after {
       display: block;
       content: "";
@@ -330,11 +326,40 @@ footer {
   li {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     background-color: white;
     border-radius: 2rem;
-    padding: 1rem;
+    // padding: 1rem;
     margin-bottom: 2rem;
+    &:hover {
+      .check {
+        display: flex;
+      }
+      span {
+        padding-right: 4rem;
+      }
+    }
+    .check {
+      display: none;
+      justify-content: center;
+
+      align-items: center;
+      background-color: $Tertiary-Color;
+      width: 5rem;
+      border-radius: 0 2rem 2rem 0;
+      &:before {
+        background: white;
+        color: $Tertiary-Color;
+        border-radius: 2rem;
+        padding: 0.5rem;
+      }
+    }
   }
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex
 }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
@@ -342,8 +367,11 @@ footer {
 }
 .DishTitle {
   font-size: 1.8rem;
+  flex: 1;
 }
 .DishDef {
   font-weight: 300;
   margin-right: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
