@@ -359,6 +359,8 @@ footer {
   display: flex;
   flex-flow: row wrap;
   flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
@@ -370,6 +372,4 @@ footer {
 .DishDef {
   font-weight: 300;
   margin-right: auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
