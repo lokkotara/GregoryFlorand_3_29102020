@@ -300,7 +300,7 @@ footer {
   border-radius: 4rem;
   position: relative;
   margin-top: -4rem;
-  padding: 3.5rem 2rem 2rem;
+  padding: 3.5rem 1rem 2rem;
   header {
     display: flex;
     justify-content: space-between;
@@ -328,8 +328,7 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     background-color: white;
-    border-radius: 2rem;
-    // padding: 1rem;
+    border-radius: 1.5rem;
     margin-bottom: 2rem;
     &:hover {
       .check {
@@ -346,19 +345,23 @@ footer {
       background-color: $Tertiary-Color;
       width: 5rem;
       border-radius: 0 2rem 2rem 0;
-      &:before {
+      transition: ease-in-out 4s;
+      i:before {
         background: white;
         color: $Tertiary-Color;
         border-radius: 2rem;
+        font-size: 1rem;
         padding: 0.5rem;
       }
     }
   }
 }
 .wrapper {
-  display: flex;
+  // display: flex;
+  padding: 1rem;
   flex-flow: row wrap;
   flex: 1;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -367,9 +370,14 @@ footer {
   font-size: 2.6rem;
 }
 .DishTitle {
-  font-size: 1.8rem;
+  font-weight: 500;
 }
 .DishDef {
   font-weight: 300;
   margin-right: auto;
+  font-size: 1.5rem;
+}
+.DishPrice {
+  padding: 1rem;
+  font-weight: 500;
 }
