@@ -335,14 +335,13 @@ footer {
       .check {
         display: flex;
       }
-      span {
-        padding-right: 4rem;
-      }
+    }
+    span {
+      align-self: flex-end;
     }
     .check {
       display: none;
       justify-content: center;
-
       align-items: center;
       background-color: $Tertiary-Color;
       width: 5rem;
@@ -359,7 +358,7 @@ footer {
 .wrapper {
   display: flex;
   flex-flow: row wrap;
-  flex
+  flex: 1;
 }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
@@ -367,7 +366,6 @@ footer {
 }
 .DishTitle {
   font-size: 1.8rem;
-  flex: 1;
 }
 .DishDef {
   font-weight: 300;
