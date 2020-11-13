@@ -266,6 +266,7 @@ footer {
     line-height: 1.5;
   }
   a {
+    transition: padding-bottom ease 0.4s, font-weight 0.2s;
     &:hover {
       font-weight: 600;
       padding-bottom: 0.5rem;
@@ -334,6 +335,12 @@ footer {
       .check {
         display: flex;
       }
+      .wrapper {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
     span {
       align-self: flex-end;
@@ -345,7 +352,6 @@ footer {
       background-color: $Tertiary-Color;
       width: 5rem;
       border-radius: 0 2rem 2rem 0;
-      transition: ease-in-out 4s;
       i:before {
         background: white;
         color: $Tertiary-Color;
@@ -357,13 +363,11 @@ footer {
   }
 }
 .wrapper {
-  // display: flex;
+  display: flex;
   padding: 1rem;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  
 }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
@@ -371,11 +375,12 @@ footer {
 }
 .DishTitle {
   font-weight: 500;
+  width: 100%;
 }
 .DishDef {
   font-weight: 300;
   margin-right: auto;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .DishPrice {
   padding: 1rem;
