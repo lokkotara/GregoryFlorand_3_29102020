@@ -117,22 +117,22 @@ h3 {
   p {
     font-weight: 300;
   }
-  button {
-    border-radius: 2.3rem;
-    border: none;
-    background: $Gradient-Color;
-    padding: 1.5rem;
-    color: white;
-    font-size: 1.6rem;
-    width: 214px;
-    align-self: center;
-    margin-bottom: 3rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.24);
-    transition: ease-in-out 0.3s;
-    &:hover {
-    box-shadow: 0 0.6rem 1rem rgba(0,0,0,0.60);
-    opacity: 0.85;
-    }
+}
+button {
+  border-radius: 2.3rem;
+  border: none;
+  background: $Gradient-Color;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.6rem;
+  width: 214px;
+  align-self: center;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.24);
+  transition: ease-in-out 0.3s;
+  &:hover {
+  box-shadow: 0 0.6rem 1rem rgba(0,0,0,0.60);
+  opacity: 0.85;
   }
 }
 // operation
@@ -233,16 +233,6 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-  .Like {
-    font-size: 2rem;
-    transition: color ease-out 0.5s, font-weight ease 0.4s;
-    &:hover {
-      background: linear-gradient(to top, #ff79da, #9356dc);
-      background-clip: text;
-      color: transparent;
-      font-weight: 900;
-    }
-  }
   aside {
     position: absolute;
     top: inherit;
@@ -256,6 +246,16 @@ h3 {
       font-size: 1.2rem;
       font-weight: 500;
     }
+  }
+}
+.Like {
+  font-size: 2rem;
+  transition: color ease-out 0.5s, font-weight ease 0.4s;
+  &:hover {
+    background: linear-gradient(to top, #ff79da, #9356dc);
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
   }
 }
 // footer
@@ -296,4 +296,54 @@ footer {
   font-size: 2rem;
   position: relative;
   right: 6rem;
+}
+// Fiche menu
+.MenuWrapper {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-radius: 4rem;
+  position: relative;
+  margin-top: -4rem;
+  padding: 2rem;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    &:after {
+      display: block;
+      content: "";
+      background: $Tertiary-Color;
+      width: 4rem;
+      height: 3px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+.MenusTitle {
+  font-family: 'shrikhand', cursive;
+  font-size: 2.6rem;
+}
+.DishTitle {
+  font-size: 1.8rem;
+}
+.DishDef {
+  font-weight: 300;
+  margin-right: auto;
 }
