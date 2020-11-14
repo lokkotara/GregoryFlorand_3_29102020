@@ -333,7 +333,9 @@ footer {
     margin-bottom: 2rem;
     &:hover {
       .check {
-        display: flex;
+        
+        right: 0;
+        width: 15%;
       }
       .wrapper {
         display: block;
@@ -345,14 +347,28 @@ footer {
     span {
       align-self: flex-end;
     }
+    .wrapper {
+      display: flex;
+      // position: relative;
+      padding: 1rem;
+      flex-flow: column nowrap;
+      flex: 1;
+      
+    }
     .check {
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       background-color: $Tertiary-Color;
       width: 5rem;
       border-radius: 0 2rem 2rem 0;
-      i:before {
+      right: inherit;
+      bottom: inherit;
+      transition: ease 0.8s;
+      position: relative;
+      width: 0;
+      overflow: hidden;
+      &icon {
         background: white;
         color: $Tertiary-Color;
         border-radius: 2rem;
@@ -361,13 +377,6 @@ footer {
       }
     }
   }
-}
-.wrapper {
-  display: flex;
-  padding: 1rem;
-  flex-flow: column nowrap;
-  flex: 1;
-  
 }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
