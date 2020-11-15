@@ -333,9 +333,11 @@ footer {
     margin-bottom: 2rem;
     &:hover {
       .check {
-        
         right: 0;
         width: 15%;
+        i {
+          animation: rotate 0.4s;
+        }
       }
       .wrapper {
         display: block;
@@ -374,10 +376,22 @@ footer {
         border-radius: 2rem;
         font-size: 1rem;
         padding: 0.5rem;
+        transition: ease-in 0.4s;
+        @keyframes rotate {
+          0% {
+            transform: rotate(180deg);
+          }
+          100% {
+            transform: rotate(360deg) ;
+          }
+        }
       }
     }
   }
 }
+// .Rotate {
+//   transform: rotate(90);
+// }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
   font-size: 2.6rem;
