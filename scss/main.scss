@@ -324,23 +324,35 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .AnimateMenu1 {
+  .AnimateDish {
     animation-name: MenuEffect;
+  }
+  .s1 {
     animation-duration: 0.5s;
   }
-  .AnimateMenu2 {
-    animation-name: MenuEffect;
+  .s2 {
     animation-duration: 1s;
   } 
-  .AnimateMenu3 {
-    animation-name: MenuEffect;
+  .s3 {
     animation-duration: 1.5s;
   }
-  .AnimateMain {
-    animation-delay: 0.5s;
+  .m1 {
+    animation-duration: 2s;
   }
-  .AnimateDessert {
-    animation-delay: 1s;
+  .m2 {
+    animation-duration: 2.5s;
+  }
+  .m3 {
+    animation-duration: 3s;
+  }
+  .d1 {
+    animation-duration: 3.5s;
+  }
+  .d2 {
+    animation-duration: 4s;
+  }
+  .d3 {
+    animation-duration: 4.5s;
   }
   @keyframes MenuEffect {
     0% {
