@@ -293,6 +293,9 @@ footer {
   right: 6rem;
 }
 // Fiche menu
+.HeadingImg {
+  max-height: 25rem;
+}
 .MenuWrapper {
   display: flex;
   flex-direction: column;
@@ -335,6 +338,9 @@ footer {
   } 
   .s3 {
     animation-duration: 1.5s;
+  }
+  .s4 {
+    animation-duration: 1.8;
   }
   .m1 {
     animation-duration: 2s;
