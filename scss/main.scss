@@ -381,7 +381,7 @@ footer {
     margin-bottom: 2rem;
     &:hover {
       .check {
-        right: 0;
+        // right: 0;
         width: 15%;
         i {
           animation: rotate 0.4s;
@@ -398,10 +398,10 @@ footer {
       align-self: flex-end;
     }
     .wrapper {
-      display: flex;
+      // display: flex;
       // position: relative;
       padding: 1rem;
-      flex-flow: column nowrap;
+      // flex-flow: column nowrap;
       flex: 1;
       
     }
