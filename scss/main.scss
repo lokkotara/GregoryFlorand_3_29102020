@@ -2,7 +2,9 @@
 $Primary-Color: #9356DC;
 $Secondary-Color: #FF79DA;
 $Tertiary-Color: #99E2D0;
-$Gradient-Color: linear-gradient(to bottom right, #ff79da, #9356dc);
+$Tertiary-Color_Alt: #008766;
+$Gradient-Color: linear-gradient(to bottom right,$Secondary-Color, $Primary-Color);
+$Gradient-Color-Alt: linear-gradient(to top,$Secondary-Color, $Primary-Color);
 :root {
   font-family: 'Roboto', sans-serif;
   background-color: white;
@@ -231,8 +233,8 @@ button {
     position: absolute;
     top: inherit;
     right: 8%;
-    background-color: #99e2d0;
-    color: #008766;
+    background-color: $Tertiary-Color;
+    color: $Tertiary-Color_Alt;
     padding: 1rem;
     border-radius: 0.2rem;
     margin-top: 1rem;
@@ -246,7 +248,7 @@ button {
   font-size: 2rem;
   transition: color ease-out 0.5s, font-weight ease 0.4s;
   &:hover {
-    background: linear-gradient(to top, #ff79da, #9356dc);
+    background: $Gradient-Color-Alt;
     background-clip: text;
     color: transparent;
     font-weight: 900;
@@ -435,9 +437,6 @@ footer {
     }
   }
 }
-// .Rotate {
-//   transform: rotate(90);
-// }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
   font-size: 2.6rem;
