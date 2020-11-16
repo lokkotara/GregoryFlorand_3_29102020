@@ -324,6 +324,34 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .AnimateMenu1 {
+    animation-name: MenuEffect;
+    animation-duration: 0.5s;
+  }
+  .AnimateMenu2 {
+    animation-name: MenuEffect;
+    animation-duration: 1s;
+  } 
+  .AnimateMenu3 {
+    animation-name: MenuEffect;
+    animation-duration: 1.5s;
+  }
+  .AnimateMain {
+    animation-delay: 0.5s;
+  }
+  .AnimateDessert {
+    animation-delay: 1s;
+  }
+  @keyframes MenuEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   li {
     display: flex;
     flex-flow: row wrap;
