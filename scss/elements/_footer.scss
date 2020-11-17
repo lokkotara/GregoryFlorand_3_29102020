@@ -17,16 +17,14 @@ footer {
       font-weight: 600;
       padding-bottom: 0.5rem;
     }
-  }
-  .Icon::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding-right: 1rem;
-  }
-  .Ustensils::before {
-    content: "\f2e7";
-  }
-  .Helping::before {
-    content: "\f4c4";
+    i {
+      padding-right: 1rem;
+    }
+    .Ustensils {
+      font-size: 1.4rem;
+    }
+    .Helping {
+      font-size: 1.1rem;
+    }
   }
 }

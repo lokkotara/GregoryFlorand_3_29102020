@@ -66,6 +66,7 @@
   &:hover {
     background: $Gradient-Color-Alt;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     font-weight: 900;
   }

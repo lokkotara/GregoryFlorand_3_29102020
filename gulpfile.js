@@ -17,7 +17,8 @@ function autoUpdate(){
       baseDir : "./www"
     }
   });
-  gulp.watch("./scss/*.scss", scss2css);
+  gulp.watch("./scss/main.scss", scss2css);
+  gulp.watch("./scss/elements/*.scss", scss2css);
   gulp.watch("./www/").on("change", browserSync.reload);
 }
 
