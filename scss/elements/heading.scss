@@ -1,0 +1,41 @@
+$Primary-Color: #9356DC;
+$Secondary-Color: #FF79DA;
+$Tertiary-Color: #99E2D0;
+$Tertiary-Color_Alt: #008766;
+$Gradient-Color: linear-gradient(to bottom right,$Secondary-Color, $Primary-Color);
+// heading
+.Heading {
+  display: flex;
+  height: 285px;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  text-align: center;
+  cursor: default;
+  h1 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin: 2.5rem auto 0;
+    width: 70%;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+button {
+  border-radius: 2.3rem;
+  border: none;
+  background: $Gradient-Color;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.6rem;
+  width: 214px;
+  align-self: center;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.24);
+  transition: ease-in-out 0.3s;
+  &:hover {
+  box-shadow: 0 0.6rem 1rem rgba(0,0,0,0.60);
+  opacity: 0.85;
+  }
+}

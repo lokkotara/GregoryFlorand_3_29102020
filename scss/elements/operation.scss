@@ -1,0 +1,51 @@
+// operation
+.Operation {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 2rem;
+  ol {
+    counter-reset: list;
+    padding-top: 1rem;
+  }
+  li {
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    counter-increment: list;
+    border-radius: 2.3rem;
+    padding: 2rem;
+    padding-left: 0;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.24);
+    transition: ease-in-out 0.2s;
+    i {
+      color: #7e7e7e;
+      font-weight: 600;
+    }
+    &:before {
+      content: counter(list);
+      background-color: $Primary-Color;
+      color: white;
+      display: flex;
+      text-align: center;
+      position: relative;
+      right: 1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      padding: 1rem;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      background-color: lighten($Primary-Color, 35%);
+      cursor: default;
+      i {
+        color: $Primary-Color;
+      }
+    }
+  }
+}

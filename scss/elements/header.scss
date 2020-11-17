@@ -1,0 +1,26 @@
+// header
+.TopHeader {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0px 0.6rem 1rem -1rem rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  img {
+    width: 162px;
+  }
+}
+.HeaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+// header menu
+.Arrow {
+  display: flex;
+  font-size: 2rem;
+  position: relative;
+  right: 6rem;
+}

@@ -1,0 +1,156 @@
+// Fiche menu
+.HeadingImg {
+  max-height: 25rem;
+}
+.MenuWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  background: #F6F6F6;
+  border-radius: 4rem;
+  position: relative;
+  margin-top: -4rem;
+  padding: 3.5rem 1rem 2rem;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    &:after {
+      display: block;
+      content: "";
+      background: $Tertiary-Color;
+      width: 4rem;
+      height: 3px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .AnimateDish {
+    animation-name: MenuEffect;
+  }
+  .s1 {
+    animation-duration: 0.5s;
+  }
+  .s2 {
+    animation-duration: 1s;
+  } 
+  .s3 {
+    animation-duration: 1.5s;
+  }
+  .s4 {
+    animation-duration: 1.8;
+  }
+  .m1 {
+    animation-duration: 2s;
+  }
+  .m2 {
+    animation-duration: 2.5s;
+  }
+  .m3 {
+    animation-duration: 3s;
+  }
+  .d1 {
+    animation-duration: 3.5s;
+  }
+  .d2 {
+    animation-duration: 4s;
+  }
+  .d3 {
+    animation-duration: 4.5s;
+  }
+  @keyframes MenuEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    &:hover {
+      .check {
+        width: 15%;
+        i {
+          animation: rotate 0.4s;
+        }
+      }
+      .wrapper {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    span {
+      align-self: flex-end;
+    }
+    .wrapper {
+      padding: 1rem;
+      flex: 1;
+      
+    }
+    .check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $Tertiary-Color;
+      width: 5rem;
+      border-radius: 0 2rem 2rem 0;
+      right: inherit;
+      bottom: inherit;
+      transition: ease 0.9s;
+      position: relative;
+      width: 0;
+      overflow: hidden;
+      &icon {
+        background: white;
+        color: $Tertiary-Color;
+        border-radius: 2rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        transition: ease-in 0.9s;
+      }
+    }
+  }
+}
+@keyframes rotate {
+          0% {
+            transform: rotate(180deg);
+          }
+          100% {
+            transform: rotate(360deg) ;
+          }
+}
+.MenusTitle {
+  font-family: 'shrikhand', cursive;
+  font-size: 2.6rem;
+}
+.DishTitle {
+  font-weight: 500;
+  width: 100%;
+}
+.DishDef {
+  font-weight: 300;
+  margin-right: auto;
+  font-size: 1.6rem;
+}
+.DishPrice {
+  padding: 1rem;
+  font-weight: 500;
+}

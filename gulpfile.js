@@ -5,7 +5,7 @@ const minify = require('gulp-clean-css');
 
 
 function scss2css() {
-  return gulp.src('./scss/*.scss')
+  return gulp.src('./scss/main.scss')
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(minify())
     .pipe(gulp.dest('./www/css'));

@@ -1,0 +1,73 @@
+
+// Restaurants
+.Restaurant {
+  display: flex;
+  padding: 5rem 2rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  img {
+    border-radius: 2rem 2rem 0 0;
+    height: 175px;
+    object-fit: cover;
+    width: 100%;
+  }
+  article {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.2);
+    border-radius: 2rem;
+    a {
+      width: 100%;
+    }
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+  figure {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+  }
+  figcaption {
+    display: flex;
+    border-radius: 0 0 2rem 2rem;
+    background-color: white;
+    flex: 1;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+  .FigWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    position: absolute;
+    top: inherit;
+    right: 8%;
+    background-color: $Tertiary-Color;
+    color: $Tertiary-Color_Alt;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}
+.Like {
+  font-size: 2rem;
+  transition: color ease-out 0.5s, font-weight ease 0.4s;
+  &:hover {
+    background: $Gradient-Color-Alt;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+  }
+}
