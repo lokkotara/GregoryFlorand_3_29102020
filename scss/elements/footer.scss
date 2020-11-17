@@ -18,16 +18,15 @@ footer {
       padding-bottom: 0.5rem;
     }
   }
+  .Icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 1rem;
+  }
   .Ustensils::before {
     content: "\f2e7";
-    font-family: "Font Awesome 5 Free";
-    padding-right: 1rem;
-    font-weight: 900;
   }
   .Helping::before {
     content: "\f4c4";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding-right: 1rem;
   }
 }
