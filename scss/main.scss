@@ -398,10 +398,7 @@ footer {
       align-self: flex-end;
     }
     .wrapper {
-      // display: flex;
-      // position: relative;
       padding: 1rem;
-      // flex-flow: column nowrap;
       flex: 1;
       
     }
@@ -414,7 +411,7 @@ footer {
       border-radius: 0 2rem 2rem 0;
       right: inherit;
       bottom: inherit;
-      transition: ease 0.8s;
+      transition: ease 0.9s;
       position: relative;
       width: 0;
       overflow: hidden;
@@ -424,18 +421,18 @@ footer {
         border-radius: 2rem;
         font-size: 1rem;
         padding: 0.5rem;
-        transition: ease-in 0.4s;
-        @keyframes rotate {
+        transition: ease-in 0.9s;
+      }
+    }
+  }
+}
+@keyframes rotate {
           0% {
             transform: rotate(180deg);
           }
           100% {
             transform: rotate(360deg) ;
           }
-        }
-      }
-    }
-  }
 }
 .MenusTitle {
   font-family: 'shrikhand', cursive;
@@ -458,14 +455,17 @@ footer {
 // Loading spinner
 .container {
 	display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 	align-items: center;
 	justify-content: center;
-  // min-height: 100vh;
   height: 0;
   background-color:#000000de;
   animation-name: LoadingSpinner;
   animation-duration: 3s;
   overflow: hidden;
+  z-index: 1;
 }
 
 .loader {
