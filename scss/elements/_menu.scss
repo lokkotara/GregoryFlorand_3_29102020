@@ -1,3 +1,22 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+@keyframes MenuEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 // Fiche menu
 .HeadingImg {
   max-height: 25rem;
@@ -15,6 +34,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .MenusTitle {
+      font-family: 'shrikhand', cursive;
+      font-size: 2.6rem;
+    }
   }
   h2 {
     font-weight: 300;
@@ -46,7 +69,7 @@
     animation-duration: 1.5s;
   }
   .s4 {
-    animation-duration: 1.8;
+    animation-duration: 1.8s;
   }
   .m1 {
     animation-duration: 2s;
@@ -66,16 +89,7 @@
   .d3 {
     animation-duration: 4.5s;
   }
-  @keyframes MenuEffect {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+ 
   li {
     display: flex;
     flex-flow: row wrap;
@@ -83,6 +97,7 @@
     background-color: white;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
+    cursor: pointer;
     &:hover {
       .check {
         width: 15%;
@@ -91,19 +106,28 @@
         }
       }
       .wrapper {
-        display: block;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
     }
-    span {
+    .DishPrice {
+      padding: 1rem;
+      font-weight: 500;
       align-self: flex-end;
     }
     .wrapper {
       padding: 1rem;
       flex: 1;
-      
+      .DishTitle {
+        font-weight: 500;
+        width: 100%;
+      }
+      .DishDef {
+        font-weight: 300;
+        margin-right: auto;
+        font-size: 1.6rem;
+      }
     }
     .check {
       display: flex;
@@ -128,29 +152,4 @@
       }
     }
   }
-}
-@keyframes rotate {
-          0% {
-            transform: rotate(180deg);
-          }
-          100% {
-            transform: rotate(360deg) ;
-          }
-}
-.MenusTitle {
-  font-family: 'shrikhand', cursive;
-  font-size: 2.6rem;
-}
-.DishTitle {
-  font-weight: 500;
-  width: 100%;
-}
-.DishDef {
-  font-weight: 300;
-  margin-right: auto;
-  font-size: 1.6rem;
-}
-.DishPrice {
-  padding: 1rem;
-  font-weight: 500;
 }
