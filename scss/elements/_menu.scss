@@ -19,7 +19,7 @@
 
 // Fiche menu
 .HeadingImg {
-  max-height: 25rem;
+  // max-height: 25rem;
 }
 .MenuWrapper {
   display: flex;
@@ -102,12 +102,10 @@
       .check {
         width: 15%;
         i {
-          animation: rotate 0.4s;
+          animation: rotate 0.6s;
         }
       }
       .wrapper {
-        white-space: nowrap;
-        overflow: hidden;
         text-overflow: ellipsis;
       }
     }
@@ -117,11 +115,12 @@
       align-self: flex-end;
     }
     .wrapper {
+      white-space: nowrap;
+      overflow: hidden;
       padding: 1rem;
       flex: 1;
       .DishTitle {
         font-weight: 500;
-        width: 100%;
       }
       .DishDef {
         font-weight: 300;
