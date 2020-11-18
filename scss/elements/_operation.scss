@@ -49,7 +49,7 @@
       align-items: center;
     }
     &:hover {
-      background-color: lighten($Primary-Color, 35%);
+      background-color: lighten(#9356DC, 35%);
       cursor: default;
       i {
         color: $Primary-Color;
