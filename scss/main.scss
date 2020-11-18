@@ -11,12 +11,14 @@ $Gradient-Color-Alt: linear-gradient(to top,$Secondary-Color, $Primary-Color);
 
 // Réglages généraux
 :root {
-  --Primary-Color: #9356DC;
-  --Secondary-Color: #FF79DA;
-  --Tertiary-Color: #99E2D0;
   font-family: 'Roboto', sans-serif;
   background-color: white;
   font-size: 10px;
+}
+body {
+  --Primary-Color: #9356DC;
+  --Secondary-Color: #FF79DA;
+  --Tertiary-Color: #99E2D0;
 }
 *,*::before,*::after{
   box-sizing:inherit
@@ -26,7 +28,7 @@ html,body,p,ul,ol,li,figure,h1,h2,h3,h4,h5,h6{
   padding:0
 }
 html {
-  box-sizing:border-box
+  box-sizing:border-box;
 }
 a {
   text-decoration: none;
