@@ -10,10 +10,12 @@
     align-items: center;
     padding: 1rem 0;
     background-color: #eaeaea;
+    // padding: 0 auto;
     &--Bar {
       background-color: inherit;
       border: none;
       padding-left: 1.5rem;
+      width: 20rem;
       &::placeholder {
         font-size: 1.4rem;
         font-weight: 600;
