@@ -63,8 +63,9 @@
   font-size: 2rem;
   transition: -webkit-text-fill-color ease-out 0.5s, font-weight ease 0.4s;
   &:hover {
-    background: $Gradient-Color-Alt;
-    background-clip: text;
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    background: -webkit-linear-gradient(to top, #FF79DA, #9356DC);
+    // background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
