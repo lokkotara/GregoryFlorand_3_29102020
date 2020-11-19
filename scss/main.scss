@@ -20,7 +20,7 @@ body {
   --Secondary-Color: #FF79DA;
   --Tertiary-Color: #99E2D0;
   --Gradient-Color:  linear-gradient(to bottom right, #FF79DA, #9356DC);
-  --Gradient-Color-Alt:  linear-gradient(to top, var(--Secondary-Color), var(--Primary-Color));
+  --Gradient-Color-Alt:  linear-gradient(to top, #FF79DA, #9356DC);
 }
 *,*::before,*::after{
   box-sizing:inherit
