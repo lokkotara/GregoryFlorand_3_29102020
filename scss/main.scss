@@ -6,8 +6,8 @@ $Primary-Color: var(--Primary-Color);
 $Secondary-Color: var(--Secondary-Color);
 $Tertiary-Color: var(--Tertiary-Color);
 $Tertiary-Color_Alt: #008766;
-$Gradient-Color: linear-gradient(to bottom right,$Secondary-Color, $Primary-Color);
-$Gradient-Color-Alt: linear-gradient(to top, var(--Secondary-Color), var(--Primary-Color));
+$Gradient-Color: var(--Gradient-Color);
+$Gradient-Color-Alt: var(--Gradient-Color);
 
 // Réglages généraux
 :root {
@@ -19,6 +19,8 @@ body {
   --Primary-Color: #9356DC;
   --Secondary-Color: #FF79DA;
   --Tertiary-Color: #99E2D0;
+  --Gradient-Color:  linear-gradient(to bottom right,var(--Secondary-Color), var(--Primary-Color));
+  --Gradient-Color-Alt:  linear-gradient(to top,var(--Secondary-Color), var(--Primary-Color));
 }
 *,*::before,*::after{
   box-sizing:inherit
