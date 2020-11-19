@@ -7,7 +7,7 @@ $Secondary-Color: var(--Secondary-Color);
 $Tertiary-Color: var(--Tertiary-Color);
 $Tertiary-Color_Alt: #008766;
 $Gradient-Color: linear-gradient(to bottom right,$Secondary-Color, $Primary-Color);
-$Gradient-Color-Alt: linear-gradient(to top,var(--Secondary-Color), var(--Primary-Color));
+$Gradient-Color-Alt: linear-gradient(to top, var(--Secondary-Color), var(--Primary-Color));
 
 // Réglages généraux
 :root {
