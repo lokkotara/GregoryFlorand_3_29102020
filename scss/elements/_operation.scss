@@ -6,6 +6,9 @@
   justify-content: center;
   // align-items: center;
   row-gap: 2rem;
+  h2 {
+    width: 100%;
+  }
   ol {
     counter-reset: list;
     display: flex;
