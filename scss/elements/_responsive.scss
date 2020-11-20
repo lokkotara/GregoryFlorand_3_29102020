@@ -14,8 +14,6 @@
         }
       }
     }
-    h2 {
-    }
   }
 }
 @media screen and (min-width:768px) {
@@ -28,7 +26,27 @@
   }
 }
 @media screen and (min-width:1024px) {
-  .Restaurant article {
-    // flex: 1;
+  .HeadingImg img{
+    object-position: bottom;
+    object-fit: cover;
+    max-height: 60vh;
+  }
+  .MenuWrapper {
+    flex-flow: row wrap;
+    column-gap: 2rem;
+    header {
+      width: 100%;
+    }
+    section {
+      flex: 1;
+    }
+    li {
+      .wrapper {
+        white-space: normal;
+        &:hover {
+          white-space: nowrap;
+        }
+      }
+    }
   }
 }
