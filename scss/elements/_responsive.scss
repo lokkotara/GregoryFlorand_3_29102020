@@ -1,4 +1,4 @@
-@media screen and (min-width:500px) {
+@media screen and (min-width:635px) {
   .Operation {
     flex-direction: row;
     justify-content: space-around;
@@ -17,19 +17,22 @@
   }
 }
 @media screen and (min-width:768px) {
-  :root {
-    font-size: 12px;
-  }
   .Restaurant article {
-    width: 300px;
+    width: 45%;
     max-width: 550px;
+  }
+  .HeadingImg img {
+    max-height: 60vh;
+    object-fit: cover;
   }
 }
 @media screen and (min-width:1024px) {
   .HeadingImg img{
     object-position: bottom;
-    object-fit: cover;
-    max-height: 60vh;
+    // max-height: 60vh;
+  }
+  .HeadingImg .Alt {
+    object-position: center;
   }
   .MenuWrapper {
     flex-flow: row wrap;
@@ -47,6 +50,26 @@
           white-space: nowrap;
         }
       }
+    }
+  }
+}
+@media screen and (min-width:1440px) {
+  .ContentWrapper {
+    max-width: 1440px;
+    margin: auto;
+    .Location, footer, .HeadingImg img {
+      border-radius: 2rem 2rem 0 0;
+    }
+    .Heading {
+      border-radius: 0 0 2rem 2rem;
+    }
+    .Restaurant {
+      margin-bottom: 4rem;
+      border-radius: 2rem;
+    }
+    .MenuWrapper {
+      border-radius: 4rem;
+      margin-bottom: 4rem;
     }
   }
 }
