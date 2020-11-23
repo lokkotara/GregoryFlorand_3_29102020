@@ -135,13 +135,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $Tertiary-Color;
       width: 5rem;
       border-radius: 0 2rem 2rem 0;
       right: inherit;
       bottom: inherit;
-      transition: ease 0.9s;
-      position: relative;
+      transition: ease-out 0.9s;
+      background-color: $Tertiary-Color;
       width: 0;
       overflow: hidden;
       &icon {

@@ -11,16 +11,16 @@ $Gradient-Color-Alt: var(--Gradient-Color-Alt);
 
 // Réglages généraux
 :root {
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
-  font-size: 10px;
-}
-body {
   --Primary-Color: #9356DC;
   --Secondary-Color: #FF79DA;
   --Tertiary-Color: #99E2D0;
   --Gradient-Color:  linear-gradient(to bottom right, #FF79DA, #9356DC);
   --Gradient-Color-Alt:  linear-gradient(to top, #FF79DA, #9356DC);
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 *,*::before,*::after{
   box-sizing:inherit
