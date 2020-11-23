@@ -10,7 +10,6 @@
   background-color: #f6f6f6;
   h2{
     width: 100%;
-
   }
   article {
     margin-top: 1rem;
@@ -60,7 +59,6 @@
       margin-top: 1rem;
       font-weight: 500;
       font-size: 1.2rem;
-      
     }
   }
 }
@@ -70,7 +68,6 @@
   &:hover {
     background: linear-gradient(to top, #FF79DA, #9356DC);
     background: -webkit-linear-gradient(to top, #FF79DA, #9356DC);
-    // background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;

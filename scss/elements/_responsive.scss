@@ -1,3 +1,4 @@
+// Vue Tablet
 @media screen and (min-width:635px) {
   .Operation {
     flex-direction: row;
@@ -7,8 +8,6 @@
       li {
         flex: 1;
         margin: 2rem;
-        // display: flex;
-        // flex-direction: column;
         span {
           width: 100%;
         }
@@ -26,10 +25,11 @@
     object-fit: cover;
   }
 }
+
+// Vue Laptop
 @media screen and (min-width:1024px) {
   .HeadingImg img{
     object-position: bottom;
-    // max-height: 60vh;
   }
   .HeadingImg .Alt {
     object-position: center;
@@ -53,6 +53,8 @@
     }
   }
 }
+
+// Vue Desktop
 @media screen and (min-width:1440px) {
   .ContentWrapper {
     max-width: 1440px;
