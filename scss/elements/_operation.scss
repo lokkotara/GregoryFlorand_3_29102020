@@ -35,7 +35,7 @@
     }
     &:before {
       content: counter(list);
-      background-color: $Primary-Color;
+      background-color: var(--Primary-Color);
       color: white;
       display: flex;
       margin-left: -3rem;
@@ -51,7 +51,7 @@
       background-color: lighten(#9356DC, 35%);
       cursor: default;
       i {
-        color: $Primary-Color;
+        color: var(--Primary-Color);
       }
     }
   }

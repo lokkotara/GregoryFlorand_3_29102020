@@ -53,8 +53,8 @@
     span {
       position: absolute;
       right: 1rem;
-      background-color: $Tertiary-Color;
-      color: $Tertiary-Color_Alt;
+      background-color: var(--Tertiary-Color);
+      color: var(--Tertiary-Color-Alt);
       padding: 1rem;
       border-radius: 0.2rem;
       margin-top: 1rem;
@@ -67,7 +67,8 @@
   font-size: 2rem;
   transition: -webkit-text-fill-color ease-out 0.5s, font-weight ease 0.4s;
   &:hover {
-    background: linear-gradient(to top, #FF79DA, #9356DC);
+    background: var(--Gradient-Color-Alt);
+    // background: linear-gradient(to top, #FF79DA, #9356DC);
     background: -webkit-linear-gradient(to top, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

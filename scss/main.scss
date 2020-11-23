@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
-// Variables
-
-$Primary-Color: var(--Primary-Color);
-$Secondary-Color: var(--Secondary-Color);
-$Tertiary-Color: var(--Tertiary-Color);
-$Tertiary-Color_Alt: #008766;
-$Gradient-Color: var(--Gradient-Color);
-$Gradient-Color-Alt: var(--Gradient-Color-Alt);
-
 // Réglages généraux
 :root {
   --Primary-Color: #9356DC;
   --Secondary-Color: #FF79DA;
   --Tertiary-Color: #99E2D0;
+  --Tertiary-Color-Alt: #008766;
   --Gradient-Color:  linear-gradient(to bottom right, #FF79DA, #9356DC);
   --Gradient-Color-Alt:  linear-gradient(to top, #FF79DA, #9356DC);
   font-size: 10px;
@@ -21,6 +13,7 @@ $Gradient-Color-Alt: var(--Gradient-Color-Alt);
 body {
   font-family: 'Roboto', sans-serif;
   background-color: white;
+  color: black;
 }
 *,*::before,*::after{
   box-sizing:inherit
