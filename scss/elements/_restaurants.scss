@@ -68,7 +68,6 @@
   transition: -webkit-text-fill-color ease-out 0.5s, font-weight ease 0.4s;
   &:hover {
     background: var(--Gradient-Color-Alt);
-    // background: linear-gradient(to top, #FF79DA, #9356DC);
     background: -webkit-linear-gradient(to top, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
