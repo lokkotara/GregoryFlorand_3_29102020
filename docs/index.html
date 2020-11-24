@@ -1,1 +1,128 @@
-<!DOCTYPE html><html lang="fr"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Oh My Food</title> <meta name="description" content="Retrouvez sans tarder les meilleurs restaurants autour de vous. Composez votre menu personnalisé en seulement quelques clics. Venez essayer, c'est facile."> <link rel="stylesheet" href="./css/main.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/></head><body> <div class="LoadingContainer"> <svg class="Loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340"> <circle cx="170" cy="170" r="160" stroke="var(--Secondary-Color)"/> <circle cx="170" cy="170" r="135" stroke="var(--Tertiary-Color)"/> <circle cx="170" cy="170" r="110" stroke="var(--Primary-Color)"/> <circle cx="170" cy="170" r="85" stroke="var(--Secondary-Color)"/> </svg> </div><div class="ContentWrapper"> <header class="TopHeader"> <img src="./images/logo/ohmyfood@2x.svg" alt="Logo du site"> </header> <aside class="Location"> <div class="LocationWrapper"> <i class="fas fa-map-marker-alt"></i> <input type="search" class="LocationWrapper--Bar" name="LocationBar" placeholder="Paris, Belleville"> </div></aside> <section class="Heading"> <h1>Réservez le menu qui vous convient</h1> <p class="test">Découvrez ces restaurants d'exception, sélectionnés par nos soins.</p><div class="ButtonWrapper"> <a href="#Restaurants">Explorer nos restaurants</a> </div></section> <section class="Operation"> <h2>Fonctionnement</h2> <ol> <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant </li><li><i class="fas fa-list"></i> Composez votre menu</li><li><i class="fas fa-store"></i> Dégustez au restaurant</li></ol> </section> <main> <section class="Restaurant" id="Restaurants"> <h2>Restaurants</h2> <article> <a href="./menus/menu_palette.html"> <figure> <span> Nouveau </span> <img src="./images/restaurants/La_Palette_Du_Gout/La_Palette_du_Gout-768.webp" srcset="./images/restaurants/La_Palette_Du_Gout/La_Palette_du_Gout-375.webp 375w, ./images/restaurants/La_Palette_Du_Gout/La_Palette_du_Gout-768.webp 768w" sizes="100vw" alt=""> <figcaption> <div class="FigWrapper"> <h3>La palette du goût</h3> <p>Ménilmontant</p></div><i class="far fa-heart Like"></i> </figcaption> </figure> </a> </article> <article> <a href="./menus/menu_note.html"> <figure> <img src="./images/restaurants/La_Note_Enchantee/La_Note_Enchantee-768.webp" srcset="./images/restaurants/La_Note_Enchantee/La_Note_Enchantee-375.webp 375w, ./images/restaurants/La_Note_Enchantee/La_Note_Enchantee-768.webp 768w" sizes="100vw" alt=""> <span> Nouveau </span> <figcaption> <div class="FigWrapper"> <h3>La note enchantée</h3> <p>Charonne</p></div><i class="far fa-heart Like"></i> </figcaption> </figure> </a> </article> <article> <a href="./menus/menu_francaise.html"> <figure> <img src="./images/restaurants/A_La_Francaise/A_La_Francaise-768.webp" srcset="./images/restaurants/A_La_Francaise/A_La_Francaise-375.webp 375w, ./images/restaurants/A_La_Francaise/A_La_Francaise-768.webp 768w" sizes="100vw" alt=""> <figcaption> <div class="FigWrapper"> <h3>A la française</h3> <p>Cité Rouge</p></div><i class="far fa-heart Like"></i> </figcaption> </figure> </a> </article> <article> <a href="./menus/menu_delice.html"> <figure> <img src="./images/restaurants/Le_Delice_Des_Sens/Le_Delice_Des_Sens-768.webp" srcset="./images/restaurants/Le_Delice_Des_Sens/Le_Delice_Des_Sens-375.webp 375w, ./images/restaurants/Le_Delice_Des_Sens/Le_Delice_Des_Sens-768.webp 768w" sizes="(max-width:768px) 100vw, 100vw" alt=""> <figcaption> <div class="FigWrapper"> <h3>Le délice des sens</h3> <p>Folie Méricourt</p></div><i class="far fa-heart Like"></i> </figcaption> </figure> </a> </article> </section> </main> <footer> <ul> <li><img src="./images/logo/logo_alt.svg" class="FooterTitle" alt=""></li><li><a href="#"><i class="fas fa-utensils Ustensils"></i> Proposer un restaurant</a></li><li><a href="#"><i class="fas fa-hands-helping Helping"></i>Devenir partenaire</a></li><li><a href="#">Mentions légales</a></li><li><a href="mailto:contact@ohmyfood.fr">Contact</a></li></ul> </footer> </div></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oh My Food</title>
+  <meta name="description" content="Retrouvez sans tarder les meilleurs restaurants autour de vous. Composez votre menu personnalisé en seulement quelques clics. Venez essayer, c'est facile.">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="LoadingContainer">
+    <!-- Loading Spinner -->
+    <svg class="Loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+      <circle cx="170" cy="170" r="160" stroke="var(--Secondary-Color)"/>
+      <circle cx="170" cy="170" r="135" stroke="var(--Tertiary-Color)"/>
+      <circle cx="170" cy="170" r="110" stroke="var(--Primary-Color)"/>
+      <circle cx="170" cy="170" r="85" stroke="var(--Secondary-Color)"/>
+    </svg>
+    <!-- fin du loading Spinner -->
+  </div>
+  <div class="ContentWrapper">
+    <header class="TopHeader">
+      <img src="./images/logo/ohmyfood@2x.svg" alt="Logo du site">
+    </header>
+    <aside class="Location">
+      <div class="LocationWrapper">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="search" class="LocationWrapper--Bar" name="LocationBar" placeholder="Paris, Belleville">
+      </div>
+    </aside>
+    <section class="Heading">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p class="test">Découvrez ces restaurants d'exception, sélectionnés par nos soins.</p>
+      <div class="ButtonWrapper">
+        <a href="#Restaurants">Explorer nos restaurants</a>
+      </div>
+    </section>
+    <section class="Operation">
+      <h2>Fonctionnement</h2>
+      <ol>
+        <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant </li>
+        <li><i class="fas fa-list"></i> Composez votre menu</li>
+        <li><i class="fas fa-store"></i> Dégustez au restaurant</li>
+      </ol>
+    </section>
+    <main>
+      <section class="Restaurant" id="Restaurants">
+        <h2>Restaurants</h2>
+        <article>
+          <a href="./menus/menu_palette.html">
+            <figure>
+              <span>
+                Nouveau
+              </span>
+              <img src="./images/restaurants/La_Palette_Du_Gout/La_Palette_du_Gout-768.webp" srcset="./images/restaurants/La_Palette_Du_Gout/La_Palette_du_Gout-375.webp 375w, ./images/restaurants/La_Palette_Du_Gout/La_Palette_du_Gout-768.webp 768w" sizes="100vw" alt="">
+              <figcaption>
+                <div class="FigWrapper">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <i class="far fa-heart Like"></i>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <article>
+          <a href="./menus/menu_note.html">
+            <figure>
+              <img src="./images/restaurants/La_Note_Enchantee/La_Note_Enchantee-768.webp" srcset="./images/restaurants/La_Note_Enchantee/La_Note_Enchantee-375.webp 375w, ./images/restaurants/La_Note_Enchantee/La_Note_Enchantee-768.webp 768w" sizes="100vw" alt="">
+              <span>
+                Nouveau
+              </span>
+              <figcaption>
+                <div class="FigWrapper">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
+                <i class="far fa-heart Like"></i>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <article>
+          <a href="./menus/menu_francaise.html">
+            <figure>
+              <img src="./images/restaurants/A_La_Francaise/A_La_Francaise-768.webp" srcset="./images/restaurants/A_La_Francaise/A_La_Francaise-375.webp 375w, ./images/restaurants/A_La_Francaise/A_La_Francaise-768.webp 768w" sizes="100vw" alt="">
+              <figcaption>
+                <div class="FigWrapper">
+                  <h3>A la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
+                <i class="far fa-heart Like"></i>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <article>
+          <a href="./menus/menu_delice.html">
+            <figure>
+              <img src="./images/restaurants/Le_Delice_Des_Sens/Le_Delice_Des_Sens-768.webp" srcset="./images/restaurants/Le_Delice_Des_Sens/Le_Delice_Des_Sens-375.webp 375w, ./images/restaurants/Le_Delice_Des_Sens/Le_Delice_Des_Sens-768.webp 768w" sizes="(max-width:768px) 100vw, 100vw" alt="">
+              <figcaption>
+                <div class="FigWrapper">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie Méricourt</p>
+                </div>
+                <i class="far fa-heart Like"></i>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><img src="./images/logo/logo_alt.svg" class="FooterTitle" alt=""></li>
+        <li><a href="#"><i class="fas fa-utensils Ustensils"></i> Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fas fa-hands-helping Helping"></i>Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
