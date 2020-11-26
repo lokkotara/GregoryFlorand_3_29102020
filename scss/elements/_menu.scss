@@ -18,12 +18,14 @@
 }
 
 // Fiche menu
-.HeadingImg img {
-  width: 100%;
-}
-.Alt {
-  max-height: 40vh;
-  object-fit: cover;
+.HeadingImg { 
+  .AdjustImg {
+    max-height: 40vh;
+    object-fit: cover;
+  }
+  img {
+    width: 100%;
+  }
 }
 .MenuWrapper {
   display: flex;
