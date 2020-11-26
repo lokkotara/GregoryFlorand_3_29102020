@@ -19,13 +19,13 @@
 
 // Fiche menu
 .HeadingImg { 
-  .AdjustImg {
-    max-height: 40vh;
-    object-fit: cover;
-  }
   img {
     width: 100%;
   }
+}
+.AdjustImg {
+  max-height: 40vh;
+  object-fit: cover;
 }
 .MenuWrapper {
   display: flex;
