@@ -21,6 +21,10 @@
 .HeadingImg img {
   width: 100%;
 }
+.Alt {
+  max-height: 40vh;
+  object-fit: cover;
+}
 .MenuWrapper {
   display: flex;
   flex-direction: column;
