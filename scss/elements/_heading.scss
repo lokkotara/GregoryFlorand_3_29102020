@@ -21,6 +21,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  .BtnMenu {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   a {
     border-radius: 2.3rem;
     border: none;
@@ -37,4 +41,5 @@
       opacity: 0.85;
     }
   }
+  
 }
