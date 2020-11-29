@@ -4,23 +4,27 @@
   justify-content: center;
   font-size: 1.7rem;
   background-color: #eaeaea;
+
   &Wrapper {
     display: flex;
     width: fit-content;
     align-items: center;
     padding: 1rem 0;
+
     &--Bar {
       flex: 1;
       background-color: inherit;
       border: none;
       padding-left: 1.5rem;
       max-width: max-content;
+
       &::placeholder {
         font-size: 1.4rem;
         font-weight: 600;
         opacity: 1;
       }
     }
+
     i {
       background-color: inherit;
       text-align: end;

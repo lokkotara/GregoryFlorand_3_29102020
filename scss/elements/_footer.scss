@@ -3,27 +3,34 @@ footer {
   background-color: #353535;
   padding: 2rem;
   color: white;
+
   .FooterTitle {
     font-family: 'shrikhand', cursive;
     padding-bottom: 2rem;
     width: 10rem;
   }
+
   li {
     display: flex;
     line-height: 1.5;
   }
+
   a {
     transition: padding-bottom ease 0.4s, font-weight 0.2s;
+
     &:hover {
       font-weight: 600;
       padding-bottom: 0.5rem;
     }
+
     i {
       padding-right: 1rem;
     }
+
     .Ustensils {
       font-size: 1.4rem;
     }
+
     .Helping {
       font-size: 1.1rem;
     }

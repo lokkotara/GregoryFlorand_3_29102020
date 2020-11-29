@@ -5,9 +5,11 @@
   flex-flow: column wrap;
   justify-content: center;
   row-gap: 2rem;
+
   h2 {
     width: 100%;
   }
+
   ol {
     counter-reset: list;
     display: flex;
@@ -16,11 +18,12 @@
     justify-content: space-around;
     width: 100%;
   }
+
   li {
     background-color: #f6f6f6;
     display: flex;
     align-items: center;
-    width:100%;
+    width: 100%;
     // column-gap: 1.5rem;
 
     counter-increment: list;
@@ -28,13 +31,15 @@
     padding: 2rem;
     text-align: center;
     margin-bottom: 3rem;
-    box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.24);
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.24);
     transition: ease-in-out 0.3s;
+
     i {
       color: #7e7e7e;
       font-weight: 600;
       margin: 0 1.5rem;
     }
+
     &:before {
       content: counter(list);
       background-color: var(--Primary-Color);
@@ -49,9 +54,11 @@
       justify-content: center;
       align-items: center;
     }
+
     &:hover {
       background-color: lighten(#9356DC, 35%);
       cursor: default;
+
       i {
         color: var(--Primary-Color);
       }

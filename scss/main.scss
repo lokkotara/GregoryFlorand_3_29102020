@@ -4,46 +4,74 @@
   --Secondary-Color: #FF79DA;
   --Tertiary-Color: #99E2D0;
   --Tertiary-Color-Alt: #008766;
-  --Gradient-Color:  linear-gradient(to bottom right, #FF79DA, #9356DC);
-  --Gradient-Color-Alt:  linear-gradient(to top, #FF79DA, #9356DC);
+  --Gradient-Color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  --Gradient-Color-Alt: linear-gradient(to top, #FF79DA, #9356DC);
   font-size: 10px;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: white;
   color: black;
 }
-*,*::before,*::after{
-  box-sizing:inherit
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit
 }
-html,body,p,ul,ol,li,figure,h1,h2,h3,h4,h5,h6{
-  margin:0;
-  padding:0
+
+html,
+body,
+p,
+ul,
+ol,
+li,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0
 }
+
 html {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
-ul, ol{
-  list-style:none
+
+ul,
+ol {
+  list-style: none
 }
-button,input{
-  margin:0
+
+button,
+input {
+  margin: 0
 }
-p, li {
+
+p,
+li {
   font-size: 1.7rem;
 }
+
 h2 {
   font-size: 2.4rem;
   font-weight: bold;
 }
+
 h3 {
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .ContentWrapper {
   display: flex;
   flex-direction: column;

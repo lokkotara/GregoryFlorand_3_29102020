@@ -7,24 +7,29 @@
   background-color: #f6f6f6;
   text-align: center;
   cursor: default;
+
   h1 {
     font-weight: bold;
     font-size: 2.4rem;
     margin: 2.5rem auto 0;
     width: 70%;
   }
+
   p {
     font-weight: 300;
   }
 }
+
 .ButtonWrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+
   .BtnMenu {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
   a {
     border-radius: 2.3rem;
     border: none;
@@ -34,12 +39,13 @@
     font-size: 1.6rem;
     align-self: center;
     margin-bottom: 3rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.24);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.24);
     transition: ease-in-out 0.3s;
+
     &:hover {
-      box-shadow: 0 0.6rem 1rem rgba(0,0,0,0.60);
+      box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.60);
       opacity: 0.85;
     }
   }
-  
+
 }

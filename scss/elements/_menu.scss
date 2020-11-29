@@ -2,15 +2,18 @@
   0% {
     transform: rotate(180deg);
   }
+
   100% {
-    transform: rotate(360deg) ;
+    transform: rotate(360deg);
   }
 }
+
 @keyframes MenuEffect {
   0% {
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -18,16 +21,18 @@
 }
 
 // Fiche menu
-.HeadingImg { 
+.HeadingImg {
   img {
     width: 100%;
   }
 }
+
 .AdjustImg {
   max-height: 40vh;
   object-fit: cover;
   object-position: center;
 }
+
 .MenuWrapper {
   display: flex;
   flex-direction: column;
@@ -37,20 +42,24 @@
   position: relative;
   margin-top: -3.5rem;
   padding: 3.5rem 1rem 2rem;
+
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .MenusTitle {
       font-family: 'shrikhand', cursive;
       font-size: 2.6rem;
     }
   }
+
   h2 {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.6rem;
     padding-bottom: 2rem;
+
     &:after {
       display: block;
       content: "";
@@ -59,43 +68,56 @@
       height: 3px;
     }
   }
+
   ul {
     display: flex;
     flex-direction: column;
   }
+
   .AnimateDish {
     animation-name: MenuEffect;
   }
+
   .s1 {
     animation-duration: 0.5s;
   }
+
   .s2 {
     animation-duration: 1s;
-  } 
+  }
+
   .s3 {
     animation-duration: 1.5s;
   }
+
   .s4 {
     animation-duration: 1.8s;
   }
+
   .m1 {
     animation-duration: 2s;
   }
+
   .m2 {
     animation-duration: 2.5s;
   }
+
   .m3 {
     animation-duration: 3s;
   }
+
   .d1 {
     animation-duration: 3.5s;
   }
+
   .d2 {
     animation-duration: 4s;
   }
+
   .d3 {
     animation-duration: 4.5s;
   }
+
   li {
     display: flex;
     flex-flow: row wrap;
@@ -104,36 +126,44 @@
     border-radius: 1.5rem;
     margin-bottom: 2rem;
     cursor: pointer;
+
     &:hover {
       .check {
         width: 15%;
+
         i {
           animation: rotate 0.6s;
         }
       }
+
       .wrapper {
         text-overflow: ellipsis;
       }
     }
+
     .DishPrice {
       padding: 1rem;
       font-weight: 500;
       align-self: flex-end;
     }
+
     .wrapper {
       overflow: hidden;
       white-space: nowrap;
       padding: 1rem;
       flex: 1;
+
       .DishTitle {
         font-weight: 500;
       }
+
       .DishDef {
         font-weight: 300;
         margin-right: auto;
         font-size: 1.6rem;
       }
     }
+
     .check {
       display: flex;
       justify-content: center;
@@ -146,6 +176,7 @@
       background-color: var(--Tertiary-Color);
       width: 0;
       overflow: hidden;
+
       &icon {
         background: white;
         color: var(--Tertiary-Color);
