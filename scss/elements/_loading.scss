@@ -60,8 +60,8 @@ circle {
 	        animation-name: preloader;
 	-webkit-animation-duration: 3s;
 	        animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: 1.5;
+	        animation-iteration-count: 1.5;
 	-webkit-animation-timing-function: ease-in-out;
 	        animation-timing-function: ease-in-out;
 	transform-origin: 17rem 17rem;
