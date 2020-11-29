@@ -68,14 +68,18 @@ circle {
 	will-change: transform;
 	&:nth-of-type(1) {
 		stroke-dasharray: 55rem;
+		stroke: var(--Secondary-Color);
 	}
 	&:nth-of-type(2) {
+		stroke: var(--Tertiary-Color);
 		stroke-dasharray: 50rem;
 	}
 	&:nth-of-type(3) {
+		stroke: var(--Primary-Color);
 		stroke-dasharray: 45rem;
 	}
 	&:nth-of-type(4) {
+		stroke: var(--Secondary-Color);
 		stroke-dasharray: 30rem;
 	}
 	@for $i from 1 through 4 {
