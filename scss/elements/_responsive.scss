@@ -43,7 +43,10 @@
 
   .MenuWrapper {
     flex-flow: row wrap;
-    column-gap: 2rem;
+    // column-gap: 2rem;
+    section {
+      max-width: 30rem;
+    }
 
     header {
       width: 100%;
@@ -64,7 +67,11 @@
     }
   }
 }
-
+@media screen and (min-width:1250px) {
+  .MenuWrapper section {
+    max-width: 40rem;
+  }
+}
 // Vue Desktop
 @media screen and (min-width:1440px) {
   .ContentWrapper {
