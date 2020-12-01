@@ -18,47 +18,45 @@ Pour mener à bien ce projet, je suis parti des différentes maquettes :
 
 <p align="center"><img src="./docs/images/README/Accueil.png" alt="Page accueil"></p>
 
-2. Les 4 pages menus
+2. Les 4 pages menus (Elles sont construites sur le même modèle)
 
 <p align="center"><img src="./docs/images/README/Menu-A_la_francaise.png" alt="Exemple de page menu"></p>
 
 3. Les animations
 
-<img src="./docs/images/README/Animations/Selection.gif">
+<p align="center"><img src="./docs/images/README/Animations/Progress.gif" alt="Arrivée progressive"></p>
+<p align="center"><img src="./docs/images/README/Animations/Selection.gif" alt="Validation du plat"></p>
+
 De plus, il est demandé d'intégrer une mise en page responsive pour les tablettes et les ordinateurs, plus libre.
 
 **************************
 
 ## Détails techniques - Les contraintes
  Voici une liste des points techniques abordés dans le briefing et qui doivent figurés dans notre projet
- * Les balises sémantiques doivent être utilisées
  * Le code doit être versionné. J'ai donc utilisé GitHub
  * La charte graphique se compose des trois couleurs suivantes :
-    * *Bleu* = #0065FC
-    * *Bleu Claire* = #DEEBFF
-    * *Gris* (arrière-plan) = #F2F2F2
-* La police du site est **Raleway**
+    * *Primaire* = #9356DC
+    * *Secondaire* = #FF79DA
+    * *Tertiaire* = #99E2D0
+* Les polices du site sont **Roboto** pour le corps et **Shrikhand** Pour les titres.
 * Les icônes proviennent de la bibliotèque **Font Awesome**
-* Chaque carte d'hébergement ou d'activité doit être cliquable dans son intégralité.
-* Dans le menu, "Hébergements" et"Activités" sont des ancres menant aux sections correspondantes.
-* Le champ de recherche doit être éditable.
-* Bien que non fonctionnels pour le moment, les filtres doivent changer d'apparence au survol.
-* La taille des photos doit être choisie pour assurer une résolution suffisante et un temps de chargement le plus court possible.
+* Chaque carte de restaurant doit rediriger au clic sur la page HTML qui lui est attribué.
+* Une loading spinner qui dure entre 1 et 3 secondes doit être présent
+* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
+* À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un bouton "J’aime" en forme de coeur est présent sur la maquette. Au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut être apparaître au survol au lieu du clic.
+* Les animations demandées doivent être fonctionnelles sur les pages de menu.
 * Le code ne doit présenter aucune erreur au validateur W3C
-Il est fortement recommander d'utiliser au choix Flexbox et Grid.
+Il est possible d'utiliser Sass pour structurer le CSS.
 
 ************************
 
 ## Évaluation - Les critères
-Les quatre points principaux sur lesquels va s'axer l'évalutation de ma soutenance sont :
-* Le respect des maquettes lors de l'intégration
-* La faculté à se servir de son éditeur et des ses outils de test
-* La capacité à utiliser GitHub pour versionner mon projet
-* Mettre en place une interface responsive
+Les trois points principaux sur lesquels va s'axer l'évalutation de ma soutenance sont :
+* Mettre en œuvre des effets CSS graphiques avancés
+* Assurer la cohérence graphique d'un site web
+* Mettre en place une structure de navigation pour un site web
 
 ## Conclusion - Les remerciements
-Enfin, pour clore cette présentation, j'aimerais remercier mon mentor qui a toujours le mot qu'il faut. 
-
-Il détecte un point sur lequel je pourrais bloquer et y apporte une réponse claire.
+Enfin, pour clore cette présentation, j'aimerais remercier mon mentor qui est toujours présent lorsque je le sollicite.
 
 Je remercie également mes partenaires lors de cette formation, qui me permettent de me dépasser. C'est grâce à eux que je peux avancer et monter en compétence.
