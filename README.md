@@ -9,21 +9,23 @@
 
 Dans ce scénario, je suis développeur  web junior dans une entreprise qui propose un outil de réservation de menus.
 
-Mon travail consiste à intégrer les maquettes graphiques en utilisant uniquement *HTML* et *CSS*, avec la possibilité d'utiliser Sass. Mais avant toute chose, voyons en quoi cela consiste.
+Mon travail consiste à intégrer les maquettes graphiques en utilisant uniquement *HTML* et *CSS*, avec la possibilité d'utiliser *Sass*. Mais avant toute chose, voyons en quoi cela consiste.
 
 ***************
 ## Présentation - Les maquettes
 Pour mener à bien ce projet, je suis parti des différentes maquettes :
 1. Une page d'accueil
 
-
 <p align="center"><img src="./docs/images/README/Accueil.png" alt="Page accueil"></p>
 
-2. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px*
+2. Les 4 pages menus
 
-<p align="center"><img src="./images/Readme/MockUp_Mobile.png" alt="Mock Up version Mobile"></p>
+<p align="center"><img src="./docs/images/README/Menu-A_la_francaise.png" alt="Exemple de page menu"></p>
 
-De plus, il est demandé d'intégrer une mise en page responsive pour les tablettes, plus libre.
+3. Les animations
+
+<img src="./docs/images/README/Animations/Selection.gif">
+De plus, il est demandé d'intégrer une mise en page responsive pour les tablettes et les ordinateurs, plus libre.
 
 **************************
 
