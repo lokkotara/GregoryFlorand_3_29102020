@@ -17,7 +17,7 @@ Pour mener à bien ce projet, je suis parti des différentes maquettes :
 1. Une page d'accueil
 
 
-<p align="center"><img src="./docs/images/REAME/Accueil.png" alt="Page accueil"></p>
+<p align="center"><img src="./docs/images/README/Accueil.png" alt="Page accueil"></p>
 
 2. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px*
 
